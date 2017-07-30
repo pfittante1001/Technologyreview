@@ -15,6 +15,57 @@ namespace Technologyreview.Controllers
         private TechnologyreviewContext db = new TechnologyreviewContext();
 
         // GET: Reviews
+        public ActionResult BrandReview()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+        public ActionResult HP()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+        public ActionResult Lenovo()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+
+        public ActionResult Apple()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+        public ActionResult Dell()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+        public ActionResult Acer()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+        public ActionResult Sony()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+        //public ActionResult HPInformation(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    Review review = db.Reviews.Find(id);
+        //    if (review == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+
+        //    return RedirectToAction("BrandReview");
+        //}
+
         public ActionResult Index()
         {
             var reviews = db.Reviews.Include(r => r.Category);
@@ -128,5 +179,7 @@ namespace Technologyreview.Controllers
             }
             base.Dispose(disposing);
         }
+
+        
     }
 }

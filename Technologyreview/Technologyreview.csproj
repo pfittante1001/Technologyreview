@@ -195,6 +195,22 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="images\completeManufactureImage.jpg" />
+    <Content Include="images\Dell.jpg" />
+    <Content Include="images\HP Large.jpg" />
+    <Content Include="images\hp large2.jpg" />
+    <Content Include="images\HP Large3.jpg.jpg" />
+    <Content Include="images\lenevo.jpg" />
+    <Content Include="images\rsz_11lenevo.jpg" />
+    <Content Include="images\rsz_acer.jpg" />
+    <Content Include="images\rsz_apple.jpg" />
+    <Content Include="images\rsz_dell.jpg" />
+    <Content Include="images\rsz_enter.jpg" />
+    <Content Include="images\rsz_hp_large2.jpg" />
+    <Content Include="images\rsz_rsz_acer.jpg" />
+    <Content Include="images\rsz_rsz_apple.jpg" />
+    <Content Include="images\rsz_rsz_sony.jpg" />
+    <Content Include="images\rsz_sony.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -236,6 +252,8 @@
     <Content Include="Views\Reviews\Details.cshtml" />
     <Content Include="Views\Reviews\Edit.cshtml" />
     <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\Reviews\BrandReview.cshtml" />
+    <Content Include="Views\Reviews\HP.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

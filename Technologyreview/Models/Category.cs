@@ -9,7 +9,7 @@ namespace Technologyreview.Models
     public class Category
     {
         [Key]
-
+        [Display(Name = "Brand")]
         public int CategoryID { get; set; }
         public string Brand { get; set; }
 

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Technologyreview.Models.Review>
+
+<div class="row container-fluid" id="createRow">
+    <div class="col-md-12 col-md-6" id="createColum">
+        <h1><font color="#000000" size="+2"><marquee behavior="alternate">Scroll through our Hewlett Packard Laptop reviews before you make your purchase</marquee></font></h1>
+
+    </div>
+
+</div>
+
+<div class="row container-fluid" id="createColumn">
+    <div class="col-md-4" id="column1">
+        <img src="~/images/HP Large.jpg" />
+    </div>     
+    <div class="col-md-4" id="column2">
+        <img src="~/images/hp large2.jpg" />
+    </div>
+    <div class="col-md-4" id="column3">
+        <img src="~/images/HP Large3.jpg.jpg" />
+    </div>
+    
+
+</div>
+
+<div id="Brand" class="row container-fluid">
+
+    @foreach (var item in Model)
+    {
+        if (item.Category.Brand.Equals("Hewlett Packard") == true)
+        {
+            <div class="col-md-4" id="text">
+                <h4 id="BrandName">
+                    @Html.DisplayFor(modelItem => item.Category.Brand)
+                </h4>
+                <h6>
+                    <span id="Title"> Model:</span> <span id="Model">@Html.DisplayFor(modelItem => item.Model)</span>
+                    <br/>
+                    <span id="Title"> Review Date:</span>  <span id="info">@Html.DisplayFor(modelItem => item.ReviewDate)</span>
+                    <br />
+                    <span id="Title"> Customer Review:</span> <span id="CustReview">@Html.DisplayFor(modelItem => item.CustReview)</span>
+                </h6>
+            </div>
+        }
+    }
+</div>
+
+
+
+ 

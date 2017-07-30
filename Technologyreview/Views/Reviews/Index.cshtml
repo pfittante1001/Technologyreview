@@ -4,72 +4,37 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Select a Laptop and Read its reviews</h2>
+<h2>or enter your own review by pressing the enter key</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Brand)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.memSize)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HardDrSize)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Make)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Model)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Manufacture)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CustReview)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ReviewDate)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Brand)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.memSize)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HardDrSize)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Make)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Model)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Manufacture)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CustReview)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReviewDate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="row container-fluid" id="imgPresent1">
+    <div class="col-md-4 col-sm-2" id="HP">
+        <a href='@Url.Action("HP","Reviews")'><img src="~/images/rsz_hp_large2.jpg"></a>
+        <h4>Hewlett Packard</h4>
+    </div>
+    <div class="col-md-4 col-sm-2" id="Lenovo">
+        <a href='@Url.Action("Lenovo", "Reviews")'><img src="~/images/rsz_11lenevo.jpg"></a>
+        <h4>Lenovo</h4>      
+    </div>
+    <div class="col-md-4 col-sm-2" id="Acer">
+        <a href='@Url.Action("Acer", "Reviews")'><img src="~/images/rsz_rsz_acer.jpg"></a>
+        <h4>Acer</h4>
+    </div>
+</div>
+<div class="row container-fluid" id="imgPresent2">
+    <div class="col-md-4 col-sm-2" id="Apple">
+        <a href='@Url.Action("Apple", "Reviews")'><img src="~/images/rsz_rsz_apple.jpg"></a>
+        <h4>Apple</h4>
+    </div>
+    <div class="col-md-4 col-sm-2" id="Sony">
+        <a href='@Url.Action("Sony", "Reviews")'><img src="~/images/rsz_rsz_sony.jpg"></a>
+        <h4>Sony</h4>
+    </div>
+    <div class="col-md-4 col-sm-2" id="Dell">
+        <a href='@Url.Action("Dell", "Reviews")'><img src="~/images/rsz_dell.jpg"></a>
+        <h4>Dell</h4>
+    </div>
+</div>

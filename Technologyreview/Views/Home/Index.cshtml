@@ -2,30 +2,80 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="carosel row container-fluid">
+    <div id="carInfo col-md-12 col-sm-6">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="~/images/rsz_acer.jpg" />
+                    <div class="carousel-caption">
+                        <h3>Acer</h3>
+                        <p>Explore Beyond Limits</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="~/images/rsz_apple.jpg" />
+                    <div class="carousel-caption">
+                        <h3>Apple</h3>
+                        <p>Think Differant</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="~/images/rsz_hp_large2.jpg" />
+                    <div class="carousel-caption">
+                        <h3>Hewlett Packard</h3>
+                        <p>Make It Matter</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/images/rsz_11lenevo.jpg" />
+                    <div class="carousel-caption">
+                        <h3>Lenovo</h3>
+                        <p>Innovation Never Stands Still</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="~/images/rsz_sony.jpg" />
+                    <div class="carousel-caption">
+                        <h3>Sony</h3>
+                        <p>Be Moved</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+<div class="row container-fluid" id="welcome">
+    <div class="col-md-12">
+        <h2 id="welcomeTitle">Compare Before You buy</h2>
+        <p id="welcomeText">
+            Read other buyers reviews before you make you next laptop purchase
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" style="background-image: url('../../images/rsz_enter.jpg'); " href='@Url.Action("Index", "Reviews")'></a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+
 </div>

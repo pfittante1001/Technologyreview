@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+   
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -19,6 +20,155 @@
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
-textarea {
+/*textarea {
     max-width: 280px;
+}*/
+
+div.col-md-10{
+    max-width:280px;
+}
+span#Title{
+    font-weight:400;
+  
+    color:#000000;
+    font-size:20px;
+}
+span#info{
+    color:#000000;
+    font-size:18px;
+    
+}
+
+span#Model{
+    font-size:18px;
+}
+
+span#CustReview {
+    font-size: 18px;
+    word-wrap:break-word;
+}
+#ActName{
+        font-size:45px;
+        color:#000000;
+        text-align:center;
+        font-weight:900;
+}
+
+#BrandName{
+    font-size:25px;
+    text-align:center;
+}
+
+img{
+    margin:auto;
+}
+
+div#imgPresent1.row.container-fluid{
+    margin-top:45px;
+}
+
+div#imgPresent2.row.container-fluid{
+    margin-top:45px;
+    margin-bottom:45px;
+}
+div#createRow.row.container-fluid{
+    width:500px;
+    margin:auto;
+    margin-left:0px;
+    margin-right:0px
+   
+}
+
+div#createColum.col-md-12.col-md-6{
+    width: 1120px;
+    margin-left: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+div.carosel.row.container-fluid{
+    width:1120px;
+    margin:auto;
+    margin-top:35px;
+}
+p#welcomeText{
+    text-align:center;
+    color:#000000;
+    font-size:30px;
+}
+h2#welcomeTitle{
+    text-align:center;
+    color:#000000;
+    font-size:45px;
+}
+a.btn.btn-default{
+  
+    margin-left: 500px;
+    margin-top: 35px;
+    width:95px;
+    height:35px;
+
+}
+
+h2{background-image: url('file:///C:\Users\WeCanCodeIT\Downloads\rsz_acer.jpg');
+    text-align:center;
+
+}
+div.col-md-12{
+    margin-top:45px;
+    background-color:#ffffff;
+}
+textarea#CustReview.form-control.text-box.multi-line{
+    width:700px;
+    height:150px;
+}
+div#createColumn.row.container-fluid {
+    margin-top: 35px;
+    margin-left: 80px;
+    margin-right: 0px;
+    margin-bottom:35px;
+}
+div#column2.col-md-4 {
+    margin-right: 0;
+    width:330px;
+    height:200px;
+    
+}
+div#column1.col-md-4 {
+    margin-right: 0;
+    width:330px;
+    height:200px;
+    
+}
+div#text.col-md-4{
+    border: 2px;
+    outline-color: #000000;
+    outline-style: solid;
+    background-size: cover;
+    padding-left: 30px;
+    padding-right: 0px;
+    height: 250px;
+}
+h4{
+    text-align:center;
+}
+div#HP.col-md-4.col-sm-2{
+    text-align:center;
+}
+div#Lenovo.col-md-4.col-sm-2{
+    text-align:center;
+}
+div#Acer.col-md-4.col-sm-2{
+    text-align:center;
+}
+div#Apple.col-md-4.col-sm-2{
+    text-align:center;
+}
+div#Sony.col-md-4.col-sm-2{
+    text-align:center;
+}
+div#Dell.col-md-4.col-sm-2{
+    text-align:center;
 }
