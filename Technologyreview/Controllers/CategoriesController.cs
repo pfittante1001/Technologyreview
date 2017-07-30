@@ -13,7 +13,10 @@ namespace Technologyreview.Controllers
     public class CategoriesController : Controller
     {
         private TechnologyreviewContext db = new TechnologyreviewContext();
-
+        public ActionResult Authentication()
+        {
+            return View();
+        }
         // GET: Categories
         public ActionResult Index()
         {

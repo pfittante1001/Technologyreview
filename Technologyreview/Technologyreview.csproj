@@ -264,6 +264,7 @@
     <Content Include="Views\Reviews\AcerPart.cshtml" />
     <Content Include="Views\Reviews\Sony.cshtml" />
     <Content Include="Views\Reviews\SonyPart.cshtml" />
+    <Content Include="Views\Categories\Authentication.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
