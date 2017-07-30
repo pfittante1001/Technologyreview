@@ -1,0 +1,116 @@
+﻿
+@*/*
+     * Pete Fittante
+     * WeCanCodeITBootCamp MVC Project
+     * 7/30/2017
+     * A technology application that will deliver a web site to be used by customers
+       who want to review laptops before making a purchase.
+
+       The application uses two models which utilize a one to many relationship
+       Category
+
+        The Category model stores and delivers input from a systems administrator that input the
+        laptop manufactures customers from which customers can choose
+        The Category model utilizes an Icollection method to establish the
+        relationship with the Reviews model
+
+        The Cataegory controller delivers the basic Index, Create, Edit and Delete
+        methods and views as well as an Authentication view and method. The authentication
+        method and view controll access to the Category Index view. The password
+        is admin;
+
+        The Index view deliver access to the systems administrator to create, delete
+        and edit manufacture input.
+
+       Reviews
+        The Reviews model stores and delivers input from customers.
+        The Reviews model utilizes a ForiegnKey method to establish the
+        relationship with the Categories model
+
+        The Reviews controller delivers the basic Index, Create, Edit and Delete
+        methods and views as well as six custom views and six partial views.
+
+        The Index view delivers access to the customer perfrom the following actions:
+        1. Create a new laptop review
+        2. Choose a link delivered on an image to view specific manufacture reviews
+
+        Each custom and partial view is used to deliver specific information about
+        the manufactures brand. A description of the partial views are as follows:
+        1. Uses a foreach loop and if statement to serve the custom view brand
+           specific infomation.
+        2. The partial view is also where the bootstrap, css and html configuration
+            is accomplished.
+
+        A desciption of the custom view is as follows:
+        1. The custom view recieves the partial view via a RenderPartial method
+        2. The custom view contains links to site the comer can purchase a laptop.
+
+        Each view utilizes the following to deliver content:
+        1. Bootstrap
+        2. CSS
+        3. HTML
+        4. The tables have been replaced with rows and columns utilizes container-fluid
+        5. The custom views, parial views, home page and reviews index page are each
+            populated with custome content and formatting.
+        6. A carosel is implemented on the home page that displays and example of
+           one of each maufactures laptop models as well as the maufacture slogan.
+        7. Each view diplays a nav bar which gives access to the Home, Brand,
+           Contact and About pages. The Contact and About pages were left to default.
+        8. As mentioned the Brand link servers an authenitcation page which will
+           give access to the Categories index page with the correct credential. The
+           password is admin
+        9 Each view utilizes a button to allow the user to navigate to the prior page.
+        10. The buttons that link the user to places to buy a laptop open in a new tab.
+        As stands the Catagories model has six catagories fom which the user can choose.
+        The Hewlett Packard details custom view has four reviews presented on a card
+        like format.  Each other manufature detail custom view has one review.
+
+       The following is an example fo the custom code used to deliver this application:
+        This Foreach loop and if statement is located in each partial view.
+        It is used to deliver specified content to the partial view. This statetment
+        exists in each partial view
+
+        <div id="Brand" class="row container-fluid">
+        @foreach (var item in Model)
+        {
+            if (item.Category.Brand.Equals("Acer") == true)
+            {
+                <div class="col-md-4" id="text">
+                    <h4 id="BrandName">
+                        @Html.DisplayFor(modelItem => item.Category.Brand)
+                    </h4>
+                    <h6>
+                        <span id="Title"> Model:</span> <span id="Model">@Html.DisplayFor(modelItem => item.Model)</span>
+                        <br/>
+                        <span id="Title"> Review Date:</span>  <span id="info">@Html.DisplayFor(modelItem => item.ReviewDate)</span>
+                        <br />
+                        <span id="Title"> Customer Review:</span> <span id="CustReview">@Html.DisplayFor(modelItem => item.CustReview)</span>
+                    </h6>
+                </div>
+            }
+        }
+    </div>
+
+    The following is the code used in the categories controller
+    to deliver the Autentication page in the Categories view:
+    public ActionResult Authentication()
+        {
+            return View();
+        }
+    The following is an example of the code used in the Reviews controller to
+    deliver the custom and partial views in the Reviews view:
+
+    This ActionResult delivers the custom view
+    public ActionResult Lenovo()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+
+    This action result delivers the partial views.
+    public ActionResult LenovoPart()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+*@

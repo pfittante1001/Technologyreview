@@ -4,5 +4,17 @@
     Html.RenderPartial("BrandReview");
 }
 
+<div class="row container-fluid" id="GoShopping">
+    <div class="col-md-4 col-sm-2" id="shopButtons">       
+        <a class="btn btn-default" id="buttons" target="_blank" href="http://www.bestbuy.com/site/computers-pcs/laptop-computers/abcat0502000.c?id=abcat0502000" >Shop BestBuy</a>
+    </div>
+    <div class="col-md-4 col-sm-2" id="shopButtons">
+        <a class="btn btn-default" id="buttons" target="_blank" href="https://www.amazon.com/Notebooks-Laptop-Computers/b?ie=UTF8&node=565108">Shop Amazon</a>
+    </div>
+    <div class="col-md-4 col-sm-2" id="shopButtons">
+        <a class="btn btn-default" id="buttons" target="_blank" href="https://www.walmart.com/cp/laptops/1089430">Shop Walmart</a>
+    </div>
+</div>
+
 <h4>Return to laptop selection page by selcting the enter key</h4>
-<p><a class="btn btn-default" style="background-image: url('../../images/rsz_enter.jpg'); " href='@Url.Action("Index", "Reviews")'></a></p>
+<p><a class="btn btn-default" id="return"style="background-image: url('../../images/rsz_enter.jpg'); " href='@Url.Action("Index", "Reviews")'></a></p>

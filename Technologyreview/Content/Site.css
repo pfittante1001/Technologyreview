@@ -105,7 +105,7 @@ h2#welcomeTitle{
     color:#000000;
     font-size:45px;
 }
-a.btn.btn-default{
+a#return.btn.btn-default{
   
     margin-left: 500px;
     margin-top: 35px;
@@ -173,4 +173,13 @@ div#Sony.col-md-4.col-sm-2{
 }
 div#Dell.col-md-4.col-sm-2{
     text-align:center;
+}
+
+a#buttons.btn.btn-default{
+    color:#ffffff;
+    background-color:darkseagreen
+}
+div#GoShopping.row.container-fluid{
+    margin-left:200px;
+    margin-bottom:35px;
 }
