@@ -20,6 +20,17 @@ namespace Technologyreview.Controllers
             var reviews = db.Reviews.Include(r => r.Category);
             return View(reviews.ToList());
         }
+        public ActionResult DellPart()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+
+        public ActionResult ApplePart()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
         public ActionResult HP()
         {
             var reviews = db.Reviews.Include(r => r.Category);
@@ -30,6 +41,12 @@ namespace Technologyreview.Controllers
             var reviews = db.Reviews.Include(r => r.Category);
             return View(reviews.ToList());
         }
+        public ActionResult LenovoPart()
+        {
+            var reviews = db.Reviews.Include(r => r.Category);
+            return View(reviews.ToList());
+        }
+
 
         public ActionResult Apple()
         {

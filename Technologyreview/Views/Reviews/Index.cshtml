@@ -4,11 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Select a Laptop and Read its reviews</h2>
-<h2>or enter your own review by pressing the enter key</h2>
+<h2>Select a laptop and read its reviews</h2>
+<h2>or enter your own review by selecting Create New</h2>
+<h2> @Html.ActionLink("Create New", "Create")</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+   
 </p>
 <div class="row container-fluid" id="imgPresent1">
     <div class="col-md-4 col-sm-2" id="HP">
@@ -38,3 +39,6 @@
         <h4>Dell</h4>
     </div>
 </div>
+<h4>Return to Home page by selcting the enter key</h4>
+<p><a class="btn btn-default" style="background-image: url('../../images/rsz_enter.jpg'); " href='@Url.Action("Index", "Home")'></a></p>
+

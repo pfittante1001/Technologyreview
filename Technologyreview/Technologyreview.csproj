@@ -254,6 +254,16 @@
     <Content Include="Views\Reviews\Index.cshtml" />
     <Content Include="Views\Reviews\BrandReview.cshtml" />
     <Content Include="Views\Reviews\HP.cshtml" />
+    <Content Include="Views\Reviews\Dell.cshtml" />
+    <Content Include="Views\Reviews\DellPart.cshtml" />
+    <Content Include="Views\Reviews\ApplePart.cshtml" />
+    <Content Include="Views\Reviews\Apple.cshtml" />
+    <Content Include="Views\Reviews\Lenovo.cshtml" />
+    <Content Include="Views\Reviews\LenovoPart.cshtml" />
+    <Content Include="Views\Reviews\Acer.cshtml" />
+    <Content Include="Views\Reviews\AcerPart.cshtml" />
+    <Content Include="Views\Reviews\Sony.cshtml" />
+    <Content Include="Views\Reviews\SonyPart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
